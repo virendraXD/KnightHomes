@@ -2,8 +2,17 @@
 
 KnightHomes is a lightweight and customizable Minecraft plugin that allows players to set, teleport to, and manage personal homes with a clean and modern GUI with sound effects.
 
-📥 Installation
-Download the latest .jar from Modrinth or SpigotMC.
+## ✨ Features
+- Set, teleport to, and delete homes
+- Customizable home limits via permissions
+- GUI-based home management
+- **Change icons and their colors directly in `config.yml` — no server restart needed!**  
+  Just run `/home reload` to apply changes instantly.
+- Simple configuration
+
+## 📥 Installation
+Download the latest .jar from Modrinth.
+Download link: https://modrinth.com/plugin/knighthomes
 
 Place it into your server's plugins folder.
 
@@ -18,14 +27,6 @@ https://github.com/virendraXD/KnightHomes/issues
 📄 License
 This project is licensed under the MIT License — see the LICENSE file for details.
 Credit is required when using or modifying this code.
-
-## ✨ Features
-- Set and delete multiple homes
-- Simple and responsive GUI menu
-- Custom colors for icons via config
-- Fully configurable home limit
-- Works with Minecraft **1.20.1 - 1.21.7**
-- Supports LuckPerms permissions
 
 ## 📜 Commands
 | Command          | Description                      | Permission        |
@@ -62,3 +63,6 @@ knighthomes.home.limit.4:
 knighthomes.home.limit.5:
   description: Allows setting 5 homes
   default: op
+
+
+
