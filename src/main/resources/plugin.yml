@@ -1,0 +1,39 @@
+name: KnightHomes
+version: 1.0
+main: com.knightgost.knighthomes.KnightHomes
+api-version: 1.20
+softdepend:
+  - LuckPerms
+commands:
+  home:
+    description: Open home GUI or use subcommands like /home reload
+    usage: /home [reload|...]
+
+permissions:
+  home.reload:
+    description: Allows player to reload the Home plugin
+    default: op
+
+  knighthomes.home:
+    description: Allows use of /home command
+    default: true
+
+  knighthomes.home.limit.1:
+    description: Allows setting 1 home
+    default: true
+
+  knighthomes.home.limit.2:
+    description: Allows setting 2 homes
+    default: false
+
+  knighthomes.home.limit.3:
+    description: Allows setting 3 homes
+    default: false
+
+  knighthomes.home.limit.4:
+    description: Allows setting 4 homes
+    default: false
+
+  knighthomes.home.limit.5:
+    description: Allows setting 5 homes
+    default: op
