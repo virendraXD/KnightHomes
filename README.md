@@ -63,6 +63,53 @@ knighthomes.home:
     default: op
 ```
 
+## ⚙️ Config (Allow changing Icons and their colors)
+```yaml
+# +----------------------------------------------------------------------------------------------+ #
+# |                                           ICONS                                               | #
+# +----------------------------------------------------------------------------------------------+ #
+
+# Define Unicode icons for different actions. These are shown in messages.    
+icons:
+  player: "⭐"                      # Shown before player names
+  homes_owned: "🏠"                 # Shown before personal home names/messages
+  home_slot: "▣"                    # Used for home slots   
+  empty_slot: "🫙"                  # Used for empty slots
+  locked_slot: "🔒"                 # Used for locked slots
+  delete_home: "❌"                 # Used for home deletion
+  set_home: "➕"                    # Used when setting a home  
+  set_home_confirmed: "✔"           # Used when home is set successfully
+  teleport_cancelled: "✖"           # Used when teleportation is cancelled
+  teleporting: "✈"                  # Used when teleporting
+  combat_teleport_blocked: "⛔"     # Shown when teleport is blocked due to combat
+  home_teleport_success: "🌀"       # Shown when teleported successfully
+  home_deleted: "🗑"                 # Shown when home is deleted
+  out_of_combat: "🛡"                # Shown when player out of combat
+  in_combat: "⚔"                    # Shown when player enters combat
+
+# +----------------------------------------------------------------------------------------------+ #
+# |                                           COLORS                                              | #
+# +----------------------------------------------------------------------------------------------+ #
+
+# Colors use '&' codes and are applied to icons/messages.
+colors:
+  player: "&6"
+  homes_owned: "&f"                  # Green
+  home_slot: "&a"                    # Green
+  empty_slot: "&7"                   # Gray
+  locked_slot: "&4"                  # Dark Red
+  delete_home: "&4"                  # Dark Red
+  set_home: "&e"                     # Yellow
+  set_home_confirmed: "&e"           # Yellow
+  teleport_cancelled: "&4"           # Dark Red
+  teleporting: "&f"                  # White
+  combat_teleport_blocked: "&4"      # Dark Red
+  home_teleport_success: "&2"        # Dark Green
+  home_deleted: "&4"                 # Dark Red
+  out_of_combat: "&2"                # Dark Green
+  in_combat: "&4"                    # Dark Red
+```
+
 ## Support & Issue
 🐛 If you find a bug or have a suggestion, please open an issue here:
 https://github.com/virendraXD/KnightHomes/issues
