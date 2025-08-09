@@ -20,6 +20,12 @@ Restart the server.
 
 Configure config.yml to your liking.
 
+## 📜 Commands
+| Command          | Description                      | Permission        |
+|------------------|----------------------------------|-------------------|
+| `/home`          | Opens the home management menu   | knighthomes.home  |
+| `/home reload`   | Reloads the plugin configuration | home.reload       |
+
 🐛 Issues & Support
 If you find a bug or have a suggestion, please open an issue here:
 https://github.com/virendraXD/KnightHomes/issues
@@ -27,12 +33,6 @@ https://github.com/virendraXD/KnightHomes/issues
 📄 License
 This project is licensed under the MIT License — see the LICENSE file for details.
 Credit is required when using or modifying this code.
-
-## 📜 Commands
-| Command          | Description                      | Permission        |
-|------------------|----------------------------------|-------------------|
-| `/home`          | Opens the home management menu   | knighthomes.home  |
-| `/home reload`   | Reloads the plugin configuration | home.reload       |
 
 ## ⚙️ Permissions
 ```yaml
