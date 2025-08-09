@@ -1,3 +1,9 @@
+# VS Code settings
+.vscode/
+
+# Maven build folder
+target/
+
 # Compiled class file
 *.class
 
