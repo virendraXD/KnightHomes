@@ -27,16 +27,6 @@ Configure config.yml to your liking.
 | `/home`          | Opens the home management menu   | knighthomes.home  |
 | `/home reload`   | Reloads the plugin configuration | home.reload       |
 
-## Support & Issue
-🐛 If you find a bug or have a suggestion, please open an issue here:
-https://github.com/virendraXD/KnightHomes/issues
-
-Discord: https://discord.gg/uySRT32aRD
-
-📄 License
-This project is licensed under the MIT License — see the LICENSE file for details.
-Credit is required when using or modifying this code.
-
 ## ⚙️ Permissions
 ```yaml
 home.reload:
@@ -71,6 +61,15 @@ knighthomes.home:
   knighthomes.home.limit.5:
     description: Allows setting 5 homes
     default: op
+```
 
-# testing
+## Support & Issue
+🐛 If you find a bug or have a suggestion, please open an issue here:
+https://github.com/virendraXD/KnightHomes/issues
+
+Discord: https://discord.gg/uySRT32aRD
+
+## 📄 License
+This project is licensed under the MIT License — see the LICENSE file for details.
+Credit is required when using or modifying this code.
 
