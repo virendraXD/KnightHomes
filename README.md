@@ -12,6 +12,7 @@ KnightHomes is a lightweight and customizable Minecraft plugin that allows playe
 
 ## 📥 Installation
 Download the latest .jar from Modrinth.
+
 Download link: https://modrinth.com/plugin/knighthomes
 
 Place it into your server's plugins folder.
@@ -26,9 +27,11 @@ Configure config.yml to your liking.
 | `/home`          | Opens the home management menu   | knighthomes.home  |
 | `/home reload`   | Reloads the plugin configuration | home.reload       |
 
-🐛 Issues & Support
-If you find a bug or have a suggestion, please open an issue here:
+## Support & Issue
+🐛 If you find a bug or have a suggestion, please open an issue here:
 https://github.com/virendraXD/KnightHomes/issues
+
+Discord: https://discord.gg/uySRT32aRD
 
 📄 License
 This project is licensed under the MIT License — see the LICENSE file for details.
