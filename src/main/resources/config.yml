@@ -35,7 +35,7 @@ icons:
   home_deleted: "🗑"                 # Shown when home is deleted
   out_of_combat: "🛡"                # Shown when player out of combat
   in_combat: "⚔"                    # Shown when player enters combat
-  teleport_cooldown: "⛔"     # Used for teleport cooldown
+  teleport_cooldown: "⛔"           # Used for teleport cooldown
 
 # +----------------------------------------------------------------------------------------------+ #
 # |                                           COLORS                                             | #
