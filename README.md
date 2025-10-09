@@ -13,7 +13,11 @@ KnightHomes is a lightweight and customizable Minecraft plugin that allows playe
 ## 📥 Installation
 Download the latest .jar from Modrinth.
 
-Download link: https://modrinth.com/plugin/knighthomes
+Download links: 
+https://modrinth.com/plugin/knighthomes
+https://www.spigotmc.org/resources/knighthomes.128304/
+https://www.curseforge.com/minecraft/bukkit-plugins/knighthomes
+
 
 Place it into your server's plugins folder.
 
