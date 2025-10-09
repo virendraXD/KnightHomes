@@ -1,5 +1,5 @@
 name: KnightHomes
-version: 1.0
+version: 1.0.0
 main: com.knightgost.knighthomes.KnightHomes
 api-version: 1.20
 softdepend:
@@ -36,4 +36,8 @@ permissions:
 
   knighthomes.home.limit.5:
     description: Allows setting 5 homes
+    default: op
+
+  knighthomes.cooldown.bypass:
+    description: Allow bypass teleport cooldown
     default: op

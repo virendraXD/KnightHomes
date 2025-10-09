@@ -14,6 +14,24 @@ public class TeleportUtils implements Listener {
 
     public static void teleportWithCountdown(Player player, Location location, String successMessage, JavaPlugin plugin) {
         UUID uuid = player.getUniqueId();
+
+        int cooldownTimeMinutes = plugin.getConfig().getInt("cooldown.time", 1); // default 1 minute
+        int cooldownTimeSeconds = cooldownTimeMinutes * 60; // convert to seconds
+
+        boolean cooldownEnabled = plugin.getConfig().getBoolean("cooldown.enabled", true);
+        String bypassPermission = plugin.getConfig().getString("cooldown.bypass-permission", "knighthomes.cooldown.bypass");
+
+        if (cooldownEnabled && !player.hasPermission(bypassPermission)) {
+            if (CooldownManager.isOnCooldown(uuid, cooldownTimeSeconds)) {
+                int remaining = CooldownManager.getRemaining(uuid, cooldownTimeSeconds);
+                player.sendMessage(MessageUtils.getColoredIconMessage(plugin,
+                    "teleport_cooldown", "§cPlease wait " + remaining/60 + "m " + (remaining%60) + "s before teleporting again!"));
+                player.playSound(player.getLocation(), Sound.BLOCK_NOTE_BLOCK_BASS, 1f, 0.8f);
+                return;
+            }
+            CooldownManager.setCooldown(uuid);
+        }
+
         teleportingPlayers.add(uuid);
 
         Location startLocation = player.getLocation().clone();
