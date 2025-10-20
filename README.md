@@ -86,6 +86,17 @@ colors:
   home_deleted: "&4"                 # Dark Red
   out_of_combat: "&2"                # Dark Green
   in_combat: "&4"                    # Dark Red
+
+# +----------------------------------------------------------------------------------------------+ #
+# |                                         MISC                                                 | #
+# +----------------------------------------------------------------------------------------------+ #
+
+cooldown:
+  enabled: true
+  time: 1 # minutes
+  bypass-permission: knighthomes.cooldown.bypass
+
+combat-teleport-block: true
 ```
 
 ## Support & Issue
