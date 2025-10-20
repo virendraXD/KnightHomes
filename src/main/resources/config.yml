@@ -43,8 +43,8 @@ icons:
 
 # Colors use '&' codes and are applied to icons/messages.
 colors:
-  player: "&6"
-  homes_owned: "&f"                  # Green
+  player: "&6"                       # Gold
+  homes_owned: "&f"                  # White
   home_slot: "&a"                    # Green
   empty_slot: "&7"                   # Gray
   locked_slot: "&4"                  # Dark Red
@@ -61,10 +61,12 @@ colors:
   teleport_cooldown: "&4"            # Dark Red
 
 # +----------------------------------------------------------------------------------------------+ #
-# |                                         COOLDOWN                                             | #
+# |                                         MISC                                                 | #
 # +----------------------------------------------------------------------------------------------+ #
 
 cooldown:
   enabled: true
   time: 1 # minutes
   bypass-permission: knighthomes.cooldown.bypass
+
+combat-teleport-block: true

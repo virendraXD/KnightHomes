@@ -13,10 +13,8 @@ KnightHomes is a lightweight and customizable Minecraft plugin that allows playe
 ## 📥 Installation
 Download the latest .jar from Modrinth.
 
-Download links: 
+Download: 
 https://modrinth.com/plugin/knighthomes
-https://www.spigotmc.org/resources/knighthomes.128304/
-https://www.curseforge.com/minecraft/bukkit-plugins/knighthomes
 
 
 Place it into your server's plugins folder.
@@ -32,40 +30,16 @@ Configure config.yml to your liking.
 | `/home reload`   | Reloads the plugin configuration | home.reload       |
 
 ## ⚙️ Permissions
-```yaml
-home.reload:
-  description: Allows player to reload the Home plugin
-  default: op
-
-knighthomes.home:
-  home.reload:
-    description: Allows player to reload the Home plugin
-    default: op
-
-  knighthomes.home:
-    description: Allows use of /home command
-    default: true
-
-  knighthomes.home.limit.1:
-    description: Allows setting 1 home
-    default: true
-
-  knighthomes.home.limit.2:
-    description: Allows setting 2 homes
-    default: false
-
-  knighthomes.home.limit.3:
-    description: Allows setting 3 homes
-    default: false
-
-  knighthomes.home.limit.4:
-    description: Allows setting 4 homes
-    default: false
-
-  knighthomes.home.limit.5:
-    description: Allows setting 5 homes
-    default: op
-```
+| Permissions                   | Description                               |
+|-------------------------------|-------------------------------------------|
+|`home.reload`                  |  Allows user to reload the Home plugin    |
+|`knighthomes.home`             |  Allows use of /home command              |
+|`knighthomes.home.limit.1`     |  Allows setting 1 home                    |
+|`knighthomes.home.limit.2`     |  Allows setting 2 home                    |
+|`knighthomes.home.limit.3`     |  Allows setting 3 home                    |
+|`knighthomes.home.limit.4`     |  Allows setting 4 home                    |
+|`knighthomes.home.limit.5`     |  Allows setting 5 home                    |
+|`knighthomes.cooldown.bypass`  |  Allows bypass teleport cooldown          |
 
 ## ⚙️ Config (Allow changing Icons and their colors)
 ```yaml

@@ -11,7 +11,7 @@ commands:
 
 permissions:
   home.reload:
-    description: Allows player to reload the Home plugin
+    description: Allows user to reload the Home plugin
     default: op
 
   knighthomes.home:
@@ -39,5 +39,5 @@ permissions:
     default: op
 
   knighthomes.cooldown.bypass:
-    description: Allow bypass teleport cooldown
+    description: Allows bypass teleport cooldown
     default: op

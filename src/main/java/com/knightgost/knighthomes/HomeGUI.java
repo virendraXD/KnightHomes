@@ -2,8 +2,8 @@ package com.knightgost.knighthomes;
 
 import java.util.HashMap;
 import java.util.List;
-import java.util.UUID;
 import java.util.Map;
+import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.bukkit.Bukkit;
@@ -149,17 +149,23 @@ public class HomeGUI implements Listener {
 
             if (click.isLeftClick() && home != null) {
                 player.closeInventory();
-
-                if (CombatManager.isInCombat(player.getUniqueId())) {
+                boolean combatBlockEnabled = plugin.getConfig().getBoolean("combat-teleport-block");
+                boolean inCombat = CombatManager.isInCombat(player.getUniqueId());
+                        
+                // Only block teleport and show message if combat-teleport-block is true
+                if (combatBlockEnabled && inCombat) {
                     player.sendMessage(
                         MessageUtils.getColoredIconMessage(plugin, "combat_teleport_blocked", "§cYou cannot teleport while in combat!"));
                     player.playSound(player.getLocation(), Sound.ENTITY_ENDERMAN_HURT, 1f, 1f);
                     return;
                 }
+            
+                // If combat-teleport-block is false, just teleport normally even if in combat
                 Component component = MessageUtils.getColoredIconMessage(plugin, "home_teleport_success", "§aTeleported to your Home " + (homeSlot + 1) + ".");
                 String message = LegacyComponentSerializer.legacySection().serialize(component);
                 TeleportUtils.teleportWithCountdown(player, home, message, plugin);
             }
+            
         }
 
         if (slot >= 29 && slot <= 33 && click.isRightClick()) {
